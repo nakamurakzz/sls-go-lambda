@@ -8,5 +8,5 @@ package:
     - "!./**"
     - "./bin/**"
 functions:
-  goserverlesslambda:
+  sls-go-lambda:
     handler: bin/main
