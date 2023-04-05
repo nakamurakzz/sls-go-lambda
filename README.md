@@ -1,5 +1,11 @@
 # Serverless FrameworkでGoのLambda Functionをデプロイする
 ## Install
+serverless frameworkのインストール
+```bash
+npm i -g serverless
+```
+
+Goのモジュールインストール
 ```bash
 go mod tidy
 ```
@@ -14,4 +20,4 @@ make build
 make deploy
 ```
 
-- aws-cliで設定したdefaultのprofileを使い、Lambda Functionをデプロイする
+- aws-cliで設定したdefaultのprofileを使い、Lambda Functionをデプロイします
