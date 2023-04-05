@@ -15,9 +15,24 @@ go mod tidy
 make build
 ```
 
-## Deploy
+## Local Run
 ```bash
-make deploy
+make local
 ```
 
-- aws-cliで設定したdefaultのprofileを使い、Lambda Functionをデプロイします
+## Deploy
+```bash
+make deploy AWS_PROFILE={AWS PROFILE名}
+```
+
+- aws-cliで設定したprofile名を指定して、Lambda Functionをデプロイします
+
+## Reference
+- main関数のサンプル
+https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/golang-handler.html
+
+- ランタイム
+https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/lambda-runtimes.html
+
+- Serverless Framework
+https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
