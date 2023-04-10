@@ -29,4 +29,4 @@ functions:
           rules:
             - prefix: hello/
             - suffix: .txt
-    reservedConcurrency: 3
+    reservedConcurrency: 1
